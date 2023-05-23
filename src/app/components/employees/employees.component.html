@@ -1,0 +1,30 @@
+<div class="grid grid-cols-3 gap-12">
+  <div
+    *ngFor="let employee of employees | slice : 0 : amountOfProjects"
+    class="h-fit shadow-xl bg-secondary border-2 border-secondaryAccent/25 rounded-lg p-6"
+  >
+    <div class="inline-block h-fit">
+      <img
+        src="{{ employee.image }}"
+        alt="{{ employee.name }}"
+        class="mb-4 w-full object-cover h-80"
+      />
+      <h2 class="mb-2 text-lg font-semibold">{{ employee.name }}</h2>
+      <p class="text-offWhite mb-4">{{ employee.position }}</p>
+    </div>
+    <div class="">
+      <p>
+       <span>{{ employee.phone }}</span>
+      </p>
+      <p>
+      <span>{{ employee.email }}</span>
+      </p>
+    </div>
+  </div>
+</div>
+<button
+  class="w-fit rounded-lg bg-gradient-to-b from-accent/80 to-secondaryAccent px-10 py-4 text-xl font-semibold text-textWhite hover:from-secondaryAccent hover:to-accent/80 hover:text-textWhite mx-auto mt-8 block"
+  (click)="showLess ? showLessProjects() : showMoreProjects()"
+>
+  {{ showLess ? "Show less" : "Show more" }}
+</button>
