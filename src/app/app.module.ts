@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { EmployeesComponent } from './components/employees/employees.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactInfoComponent } from './components/contact-info/contact-info.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    AboutUsComponent,
+    ContactInfoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleMapsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,8 @@
+.offWhite-background {
+  background-color: transparent;
+  color: #f1fefd;
+}
+
+.gray-background {
+  @apply bg-gradient-to-b from-accent/80 to-secondaryAccent hover:from-secondaryAccent hover:to-accent/80;
+}

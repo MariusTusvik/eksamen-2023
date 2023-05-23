@@ -1,0 +1,41 @@
+<div class="grid grid-cols-2 gap-x-20">
+  <div class="mx-auto my-auto">
+    <p class="mb-8 text-3xl font-semibold">We are located at:</p>
+    <div>
+      <div class="mb-10 flex">
+        <button
+          class="w-80 py-6 text-center text-xl text-black"
+          [ngClass]="{
+            'gray-background': activeTab === 'laboratory',
+            'offWhite-background': activeTab !== 'laboratory'
+          }"
+          (click)="setActiveTab('laboratory')"
+        >
+          Laboratory
+        </button>
+        <button
+          class="w-80 py-6 text-center text-xl text-black"
+          [ngClass]="{
+            'gray-background': activeTab === 'office',
+            'offWhite-background': activeTab !== 'office'
+          }"
+          (click)="setActiveTab('office')"
+        >
+          Office
+        </button>
+      </div>
+
+      <div class="space-y-5 text-xl text-offWhite" *ngIf="activeTab === 'laboratory'">
+        <p class="text-2xl font-semibold text-textWhite">Laboratory address</p>
+        <p>Moscow, Lefortovskaya embankment, building 1</p>
+        <p>Power Engineering MSTU im. N.E. Bauman</p>
+      </div>
+      <div class="space-y-5 text-xl text-offWhite" *ngIf="activeTab === 'office'">
+        <p class="text-2xl font-semibold text-textWhite">Office adress</p>
+        <p>Moscow, Baumanskaya 68/8 building 1</p>
+        <p>Phone: +7 495 249-11-13</p>
+      </div>
+    </div>
+  </div>
+  <google-map [center]="center" [zoom]="zoom" width="100%"></google-map>
+</div>
