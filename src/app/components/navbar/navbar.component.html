@@ -1,0 +1,24 @@
+<div class="absolute top-0 w-full">
+  <div class="flex justify-between max-w-[100rem] mx-auto w-full pt-8">
+    <img src="/assets/logo.png" alt="" class="h-12 object-contain" />
+    <div class="flex gap-x-12">
+      <button class="text-gray-400 text-lg">Produkter</button>
+      <button class="text-gray-400 text-lg">Tjenester</button>
+      <button class="text-gray-400 text-lg">Industrier</button>
+      <button class="text-gray-400 text-lg">Om oss</button>
+      <button class="text-gray-400 text-lg">Kontakt oss</button>
+    </div>
+    <div class="flex gap-x-4">
+      <button
+        *ngFor="let item of icons"
+        class="rounded-full border-accent border-2"
+      >
+        <img
+          src="{{ item.link }}"
+          alt=""
+          class="w-12 h-12 object-contain p-4"
+        />
+      </button>
+    </div>
+  </div>
+</div>
