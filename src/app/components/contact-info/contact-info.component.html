@@ -2,36 +2,36 @@
   <div class="mx-auto my-auto">
     <p class="mb-8 text-3xl font-semibold">We are located at:</p>
     <div>
-      <div class="mb-10 flex">
+      <div class="mb-10 flex gap-x-12">
         <button
-          class="w-80 py-6 text-center text-xl text-black"
+          class="w-60 py-6 text-center text-xl text-black rounded-2xl"
           [ngClass]="{
-            'gray-background': activeTab === 'laboratory',
-            'offWhite-background': activeTab !== 'laboratory'
+            'gray-background': activeTab === 'USA',
+            'offWhite-background': activeTab !== 'USA'
           }"
-          (click)="setActiveTab('laboratory')"
+          (click)="setActiveTab('USA')"
         >
-          Laboratory
+          USA
         </button>
         <button
-          class="w-80 py-6 text-center text-xl text-black"
+          class="w-60 py-6 text-center text-xl text-black rounded-2xl"
           [ngClass]="{
-            'gray-background': activeTab === 'office',
-            'offWhite-background': activeTab !== 'office'
+            'gray-background': activeTab === 'Norway',
+            'offWhite-background': activeTab !== 'Norway'
           }"
-          (click)="setActiveTab('office')"
+          (click)="setActiveTab('Norway')"
         >
-          Office
+          Norway
         </button>
       </div>
 
-      <div class="space-y-5 text-xl text-offWhite" *ngIf="activeTab === 'laboratory'">
-        <p class="text-2xl font-semibold text-textWhite">Laboratory address</p>
+      <div class="space-y-5 text-xl text-offWhite" *ngIf="activeTab === 'USA'">
+        <p class="text-2xl font-semibold text-textWhite">USA address</p>
         <p>Moscow, Lefortovskaya embankment, building 1</p>
         <p>Power Engineering MSTU im. N.E. Bauman</p>
       </div>
-      <div class="space-y-5 text-xl text-offWhite" *ngIf="activeTab === 'office'">
-        <p class="text-2xl font-semibold text-textWhite">Office adress</p>
+      <div class="space-y-5 text-xl text-offWhite" *ngIf="activeTab === 'Norway'">
+        <p class="text-2xl font-semibold text-textWhite">Norge adress</p>
         <p>Moscow, Baumanskaya 68/8 building 1</p>
         <p>Phone: +7 495 249-11-13</p>
       </div>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-type Tab = 'laboratory' | 'office';
+type Tab = 'USA' | 'Norway';
 
 @Component({
   selector: 'app-contact-info',
@@ -13,14 +13,15 @@ export class ContactInfoComponent {
   constructor() {
     this.setCenter();
   }
-  
-  activeTab: Tab = 'laboratory';
+
+  activeTab: Tab = 'USA';
   center!: google.maps.LatLngLiteral;
   zoom = 12;
 
+
   locations: Record<Tab, google.maps.LatLngLiteral> = {
-    laboratory: { lat: 40.73061, lng: -73.935242 },
-    office: { lat: 40.712776, lng: -74.005974 },
+    USA: { lat: 40.73061, lng: -73.935242 },
+    Norway: { lat: 40.712776, lng: -74.005974 },
   };
 
   setActiveTab(tab: Tab): void {

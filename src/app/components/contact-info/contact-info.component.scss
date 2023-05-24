@@ -4,5 +4,5 @@
 }
 
 .gray-background {
-  @apply bg-gradient-to-b from-accent/80 to-secondaryAccent hover:from-secondaryAccent hover:to-accent/80;
+  @apply bg-gradient-to-b from-accent/80 to-secondaryAccent hover:from-secondaryAccent hover:to-accent/80 text-textWhite;
 }
