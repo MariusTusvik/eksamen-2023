@@ -9,6 +9,7 @@ import { EmployeesComponent } from './components/employees/employees.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactInfoComponent } from './components/contact-info/contact-info.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { SocialIconsComponent } from './components/social-icons/social-icons.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     EmployeesComponent,
     AboutUsComponent,
     ContactInfoComponent,
+    SocialIconsComponent,
   ],
   imports: [
     BrowserModule,

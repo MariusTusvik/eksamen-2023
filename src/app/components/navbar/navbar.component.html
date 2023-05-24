@@ -1,17 +1,6 @@
 <div class="w-full">
   <div class="mx-auto flex w-full max-w-[100rem] justify-between pt-8">
     <img src="/assets/logo.png" alt="" class="h-12 object-contain" />
-    <div class="flex gap-x-4">
-      <button
-        *ngFor="let item of icons"
-        class="rounded-full border-2 border-accent"
-      >
-        <img
-          src="{{ item.link }}"
-          alt=""
-          class="h-12 w-12 object-contain p-4"
-        />
-      </button>
-    </div>
+    <app-social-icons></app-social-icons>
   </div>
 </div>
