@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent {
-  
+  scrollToContact() {
+    let contactInfo = document.getElementById('contact');
+    if (contactInfo !== null) {
+      contactInfo.scrollIntoView({ behavior: 'smooth' });
+      contactInfo = null;
+    }
+  }
 }
