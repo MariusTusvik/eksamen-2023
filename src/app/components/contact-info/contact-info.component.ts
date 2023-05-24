@@ -32,4 +32,5 @@ export class ContactInfoComponent {
   setCenter(): void {
     this.center = this.locations[this.activeTab];
   }
+
 }
