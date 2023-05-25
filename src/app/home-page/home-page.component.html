@@ -1,74 +1,69 @@
 <div class="bg-primary">
-    <app-background-glow [glow1]="true" glowPosition=""></app-background-glow>
-    <!-- landing / navbar -->
-    <div class="landing-image h-screen">
-      <app-navbar></app-navbar>
-      <div
-        class="mx-auto flex h-full flex-col justify-center py-20 text-center"
-      >
-        <p class="mb-12 text-[7rem] font-bold text-textWhite">
-          Cyber Sikkerhet Tjenester
-        </p>
-        <p class="mx-auto mb-6 max-w-6xl text-3xl font-thin text-offWhite">
-          Cyber Sikkerhet Tjenester er et firma som leverer tjenester og håndter
-          cyber sikkerhets risikoer for klientene våres. Vi er basert i norge og
-          USA
-        </p>
-        <button
-          class="mx-auto mt-10 w-fit rounded-lg bg-gradient-to-b from-accent/80 to-secondaryAccent px-10 py-4 text-xl font-semibold text-textWhite hover:from-secondaryAccent hover:to-accent/80 hover:text-textWhite"
-          (click)="scrollToContact()"
-        >
-          Ta kontakt
-        </button>
-      </div>
-    </div>
-
-    <!-- about -->
-    <div
-      class="mx-auto mb-20 grid max-w-7xl grid-cols-2 justify-center gap-x-20"
-    >
-      <img
-        src="/assets/design-elements/What-Is-design-element.png"
-        alt=""
-        class="w-full object-contain"
-      />
-      <app-about-us></app-about-us>
-          <app-background-glow [glow2]="true" glowPosition=""></app-background-glow>
-
-    </div>
-
-    <!-- employees -->
-    <div class="mx-auto mb-20 max-w-7xl">
-      <p class="mb-12 text-center text-5xl font-semibold text-textWhite">
-        Våre Ansatte
+  <app-background-glow [glow1]="true" glowPosition=""></app-background-glow>
+  <!-- landing / navbar -->
+  <div class="landing-image h-screen">
+    <app-navbar></app-navbar>
+    <div class="mx-auto flex h-full flex-col justify-center py-20 text-center">
+      <p class="mb-12 text-[7rem] font-bold text-textWhite">
+        Cyber Sikkerhet Tjenester
       </p>
-      <app-background-glow [glow1]="true" glowPosition=""></app-background-glow>
-      <app-employees></app-employees>
-    </div>
-
-    <!-- taper -->
-    <div class="taper-image mb-12 bg-[#0b161a] py-12">
-      <div
-        class="mx-auto flex max-w-7xl flex-col items-center justify-center text-center"
-      >
-        <p class="mb-12 text-center text-5xl font-semibold text-textWhite">
-          Check out our social media for more information!
-        </p>
-        <p class="mx-auto mb-8 max-w-6xl text-3xl font-thin text-offWhite">
-          På våres sosiale medier kan du finne mer informasjon om oss og hva vi
-          gjør for å hjelpe deg og din bedrift. Sjekk oss ut på sosiale medier
-          for mer informasjon!
-        </p>
-        <app-social-icons></app-social-icons>
-      </div>
-    </div>
-
-    <!-- contact-info -->
-    <div class="mx-auto max-w-7xl pb-20" id="contact">
-          <app-background-glow [glow1]="true" glowPosition=""></app-background-glow>
-      <p class="mb-12 text-center text-5xl font-semibold text-textWhite">
-        Kontakt oss
+      <p class="mx-auto mb-6 max-w-6xl text-3xl font-thin text-offWhite">
+        Cyber Sikkerhet Tjenester er et firma som leverer tjenester og håndter
+        cyber sikkerhets risikoer for klientene våres. Vi er basert i norge og
+        USA
       </p>
-      <app-contact-info></app-contact-info>
+      <button
+        class="mx-auto mt-10 w-fit rounded-lg bg-gradient-to-b from-accent/80 to-secondaryAccent px-10 py-4 text-xl font-semibold text-textWhite hover:from-secondaryAccent hover:to-accent/80 hover:text-textWhite"
+        (click)="scrollToContact()"
+      >
+        Ta kontakt
+      </button>
     </div>
   </div>
+
+  <!-- about -->
+  <div class="mx-auto mb-20 grid max-w-7xl grid-cols-2 justify-center gap-x-20">
+    <img
+      src="/assets/design-elements/What-Is-design-element.png"
+      alt=""
+      class="w-full object-contain"
+    />
+    <app-about-us></app-about-us>
+    <app-background-glow [glow2]="true" glowPosition=""></app-background-glow>
+  </div>
+
+  <!-- employees -->
+  <div class="mx-auto mb-20 max-w-7xl">
+    <p class="mb-12 text-center text-5xl font-semibold text-textWhite">
+      Våre Ansatte
+    </p>
+    <app-background-glow [glow1]="true" glowPosition=""></app-background-glow>
+    <app-employees></app-employees>
+  </div>
+
+  <!-- taper -->
+  <div class="taper-image mb-12 bg-[#0b161a] py-12">
+    <div
+      class="mx-auto flex max-w-7xl flex-col items-center justify-center text-center"
+    >
+      <p class="mb-12 text-center text-5xl font-semibold text-textWhite">
+        Check out our social media for more information!
+      </p>
+      <p class="mx-auto mb-8 max-w-6xl text-3xl font-thin text-offWhite">
+        På våres sosiale medier kan du finne mer informasjon om oss og hva vi
+        gjør for å hjelpe deg og din bedrift. Sjekk oss ut på sosiale medier for
+        mer informasjon!
+      </p>
+      <app-social-icons></app-social-icons>
+    </div>
+  </div>
+
+  <!-- contact-info -->
+  <div class="mx-auto max-w-7xl pb-20" id="contact">
+    <app-background-glow [glow1]="true" glowPosition=""></app-background-glow>
+    <p class="mb-12 text-center text-5xl font-semibold text-textWhite">
+      Kontakt oss
+    </p>
+    <app-contact-info></app-contact-info>
+  </div>
+</div>
