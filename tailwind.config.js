@@ -11,6 +11,7 @@ module.exports = {
         textWhite: "#f1fefd",
         offWhite: "#bed1d5",
       },
+      pointerEvents: ["responsive"],
     },
   },
   plugins: [],

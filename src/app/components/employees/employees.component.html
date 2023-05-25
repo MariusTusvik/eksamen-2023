@@ -1,4 +1,4 @@
-<div class="grid grid-cols-3 gap-12">
+<div class="grid grid-cols-3 gap-12 z-50">
   <div
     *ngFor="let employee of employees | slice : 0 : amountOfEmployees"
     class="h-fit shadow-xl bg-secondary border-2 border-secondaryAccent/25 rounded-lg p-6"
@@ -23,7 +23,7 @@
   </div>
 </div>
 <button
-  class="w-fit rounded-lg bg-gradient-to-b from-accent/80 to-secondaryAccent px-10 py-4 text-xl font-semibold text-textWhite hover:from-secondaryAccent hover:to-accent/80 hover:text-textWhite mx-auto mt-8 block"
+  class="w-fit rounded-lg bg-gradient-to-b  from-accent/80 to-secondaryAccent px-10 py-4 text-xl font-semibold text-textWhite hover:from-secondaryAccent hover:to-accent/80 hover:text-textWhite mx-auto mt-8 block"
   (click)="showLess ? showLessEmployees() : showMoreEmployees()"
 >
   {{ showLess ? "Show less" : "Show more" }}

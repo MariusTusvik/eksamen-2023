@@ -10,6 +10,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactInfoComponent } from './components/contact-info/contact-info.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { SocialIconsComponent } from './components/social-icons/social-icons.component';
+import { BackgroundGlowComponent } from './components/background-glow/background-glow.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SocialIconsComponent } from './components/social-icons/social-icons.com
     AboutUsComponent,
     ContactInfoComponent,
     SocialIconsComponent,
+    BackgroundGlowComponent,
   ],
   imports: [
     BrowserModule,
