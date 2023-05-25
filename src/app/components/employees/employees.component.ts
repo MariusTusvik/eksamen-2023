@@ -6,19 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./employees.component.scss'],
 })
 export class EmployeesComponent {
-  amountOfProjects = 3;
-  showMoreProjects() {
-    this.amountOfProjects += this.employees.length - this.amountOfProjects;
+  amountOfEmployees = 3;
+  showMoreEmployees() {
+    this.amountOfEmployees += this.employees.length - this.amountOfEmployees;
     this.showLessToggle();
   }
 
-  showLessProjects() {
-    this.amountOfProjects = 3;
+  showLessEmployees() {
+    this.amountOfEmployees = 3;
     this.showLessToggle();
   }
   showLess = false;
   showLessToggle() {
-    if (this.amountOfProjects === this.employees.length) {
+    if (this.amountOfEmployees === this.employees.length) {
       this.showLess = true;
     } else {
       this.showLess = false;

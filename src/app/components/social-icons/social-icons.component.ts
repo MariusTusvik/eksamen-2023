@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SocialIconsComponent {
   icons = [
-    { link: '/assets/design-elements/social-icons/twitter.png' },
-    { link: '/assets/design-elements/social-icons/linkedin.png' },
-    { link: '/assets/design-elements/social-icons/instagram.png' },
-    { link: '/assets/design-elements/social-icons/facebook.png' },
+    { icon: '/assets/design-elements/social-icons/twitter.png' },
+    { icon: '/assets/design-elements/social-icons/linkedin.png' },
+    { icon: '/assets/design-elements/social-icons/instagram.png' },
+    { icon: '/assets/design-elements/social-icons/facebook.png' },
   ];
 }

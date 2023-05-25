@@ -1,12 +1,8 @@
 <div class="flex gap-x-4">
-      <button
-        *ngFor="let item of icons"
-        class="rounded-full border-2 border-accent"
-      >
-        <img
-          src="{{ item.link }}"
-          alt=""
-          class="h-12 w-12 object-contain p-4"
-        />
-      </button>
-    </div>
+  <button
+    *ngFor="let item of icons"
+    class="rounded-full border-2 border-accent"
+  >
+    <img src="{{ item.icon }}" alt="" class="h-12 w-12 object-contain p-4" />
+  </button>
+</div>
