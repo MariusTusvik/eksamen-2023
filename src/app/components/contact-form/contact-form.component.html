@@ -1,0 +1,42 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-4">
+  <div class="flex gap-x-8">
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label class="text-offGray">Name</mat-label>
+      <input matInput type="text" formControlName="name" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label class="text-offGray">Email</mat-label>
+      <input matInput type="email" formControlName="email" required />
+      <mat-error
+        *ngIf="
+          contactForm?.get('email')?.invalid &&
+          contactForm?.get('email')?.touched
+        "
+      >
+        Please enter a valid email address.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Avdeling for kontakt</mat-label>
+      <select matNativeControl required formControlName="department">
+        <option value="Økonomi">Økonomi</option>
+        <option value="BrukerStøtte">Bruker støtte</option>
+        <option value="Nødhjelp">Nødhjelp</option>
+      </select>
+    </mat-form-field>
+  </div>
+
+  <mat-form-field appearance="fill" class="h-40 w-full">
+    <mat-label class="text-offGray">Message</mat-label>
+    <textarea matInput formControlName="message" required></textarea>
+  </mat-form-field>
+
+  <button
+    type="submit"
+    class="w-60 border-2 border-white px-10 py-3 text-center text-lg font-semibold text-white"
+  >
+    Submit form
+  </button>
+</form>

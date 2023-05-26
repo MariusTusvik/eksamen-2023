@@ -11,6 +11,14 @@ import { ContactInfoComponent } from './components/contact-info/contact-info.com
 import { GoogleMapsModule } from '@angular/google-maps';
 import { SocialIconsComponent } from './components/social-icons/social-icons.component';
 import { BackgroundGlowComponent } from './components/background-glow/background-glow.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -22,11 +30,21 @@ import { BackgroundGlowComponent } from './components/background-glow/background
     ContactInfoComponent,
     SocialIconsComponent,
     BackgroundGlowComponent,
+    ContactFormComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     GoogleMapsModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
