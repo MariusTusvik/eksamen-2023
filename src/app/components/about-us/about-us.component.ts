@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.scss'],
 })
 export class AboutUsComponent {
-  scrollToContact() {
-    let contactInfo = document.getElementById('contact');
-    if (contactInfo !== null) {
-      contactInfo.scrollIntoView({ behavior: 'smooth' });
-      contactInfo = null;
+  scrollToLocation() {
+    let location = document.getElementById('location');
+    if (location !== null) {
+      location.scrollIntoView({ behavior: 'smooth' });
+      location = null;
     }
   }
 }

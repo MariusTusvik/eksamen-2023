@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
   scrollToContact() {
-    let contactInfo = document.getElementById('contact');
-    if (contactInfo !== null) {
-      contactInfo.scrollIntoView({ behavior: 'smooth' });
-      contactInfo = null;
+    let contact = document.getElementById('contact');
+    if (contact !== null) {
+      contact.scrollIntoView({ behavior: 'smooth' });
+      contact = null;
     }
   }
 }
