@@ -19,6 +19,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CookieBannerComponent } from './components/cookie-banner/cookie-banner.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     SocialIconsComponent,
     BackgroundGlowComponent,
     ContactFormComponent,
+    CookieBannerComponent,
 
   ],
   imports: [
@@ -45,6 +48,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     MatCheckboxModule,
     MatSnackBarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
